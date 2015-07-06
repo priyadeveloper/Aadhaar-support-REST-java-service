@@ -107,7 +107,7 @@ String signedDoc;
 
         signedDoc = new DigitalSigner("/home/priya/code/public-may2012.p12","public".toCharArray(),"public").signXML(s,true);
 String query=signedDoc;
-/*
+
 
 URLConnection urlConnection = new URL(url).openConnection();
 urlConnection.setUseCaches(false);
@@ -139,12 +139,6 @@ while(read != null) {
 }
 
 return sb.toString();
-
-
-      */
-        
-        
-    return query;
     
 }
     class DigitalSigner {
